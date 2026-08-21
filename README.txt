@@ -22,6 +22,8 @@ Features:
 - Google review rating badge and rating summary for social proof
 - FAQ section with accordion-style expandable answers
 - Consistent NAP (Name/Address/Phone) across header, contact, and footer
+- Autoplay hero video (banner-video.mp4) with image poster fallback
+
 
 Notes:
 - The client-provided logo is included as assets/kids-r-kreative-logo.png.
