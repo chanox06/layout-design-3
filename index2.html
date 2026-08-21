@@ -7,100 +7,103 @@
   <meta name="description" content="Kids-R-Kreative Learning Center offers trusted daycare, infant care, child care, VPK, and after-school programs in Mangonia Park & West Palm Beach, FL. Serving families since 2006. Call 561-296-2462.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-  <!-- ===== Top Bar ===== -->
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <span class="topbar-item">📍 4480 S Tiffany Dr, Mangonia Park, FL 33407</span>
-      <span class="topbar-item">📞 <a href="tel:+15612962462">561-296-2462</a></span>
-      <span class="topbar-item">🕐 Mon–Fri 7:00 AM – 5:30 PM</span>
-    </div>
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader">
+    <div class="loader-ring"></div>
+    <span>Kids-R-Kreative</span>
   </div>
 
   <!-- ===== Header ===== -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="container header-inner">
       <a href="#" class="logo"><img src="assets/kids-r-kreative-logo.png" alt="Kids-R-Kreative Learning Center, Inc."></a>
       <nav class="nav" id="nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#programs">Programs</a>
-        <a href="#why">Why Us</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-orange" href="#tour">Schedule a Tour</a>
+      <a class="btn btn-accent" href="#tour">Book a Tour</a>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <!-- ===== Hero ===== -->
+  <!-- ===== Hero Slider ===== -->
   <section class="hero" id="home">
-    <div class="hero-bg">
-      <span class="bubble b1"></span>
-      <span class="bubble b2"></span>
-      <span class="bubble b3"></span>
-      <span class="bubble b4"></span>
-      <span class="bubble b5"></span>
+    <div class="slider" id="slider">
+      <div class="slide active" style="background-image:url('assets/outdoor-play.png')">
+        <div class="slide-overlay"></div>
+        <div class="container slide-content">
+          <span class="slide-kicker">01 — Outdoor Play</span>
+          <h1>Where Little Minds<br><em>Grow Big</em></h1>
+          <p>Daycare · VPK · Infant Care · After-School in Mangonia Park, FL</p>
+          <a class="btn btn-accent" href="#tour">Schedule a Tour →</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('assets/classroom-fun.png')">
+        <div class="slide-overlay"></div>
+        <div class="container slide-content">
+          <span class="slide-kicker">02 — Classroom Fun</span>
+          <h1>Learning Through<br><em>Play & Discovery</em></h1>
+          <p>Frog Street curriculum for ages 6 weeks to 12 years</p>
+          <a class="btn btn-accent" href="#programs">Explore Programs →</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('assets/learning-spaces.png')">
+        <div class="slide-overlay"></div>
+        <div class="container slide-content">
+          <span class="slide-kicker">03 — Learning Spaces</span>
+          <h1>Safe, Nurturing<br><em>Environments</em></h1>
+          <p>Trusted by families since 2006 · Florida Licensed</p>
+          <a class="btn btn-accent" href="#about">Our Story →</a>
+        </div>
+      </div>
     </div>
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <span class="hero-badge">★ Trusted Since 2006 ★</span>
-        <h1>A Bright Beginning <span>Starts Here</span></h1>
-        <p>Daycare · VPK · Infant Care · After-School — nurturing every child's potential in Mangonia Park & West Palm Beach, FL.</p>
-        <div class="hero-actions">
-          <a class="btn btn-orange" href="#tour">📅 Schedule a Tour</a>
-          <a class="btn btn-white" href="#programs">Explore Programs</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><strong data-count="20">0</strong><span>+ Years</span></div>
-          <div class="stat"><strong data-count="37">0</strong><span>Reviews</span></div>
-          <div class="stat"><strong data-count="4">0</strong><span>Programs</span></div>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card">
-          <img src="assets/main-content-img.png" alt="Children learning at Kids-R-Kreative">
-          <div class="hero-card-badge">⭐ 4.0 on Google</div>
-        </div>
-        <div class="float-chip chip-1">🎨 Creative Learning</div>
-        <div class="float-chip chip-2">🧸 Safe & Caring</div>
-        <div class="float-chip chip-3">📚 VPK Ready</div>
-      </div>
+    <div class="slider-nav">
+      <button class="s-btn prev" id="prev">←</button>
+      <button class="s-btn next" id="next">→</button>
+    </div>
+    <div class="slider-dots" id="dots"></div>
+    <div class="scroll-hint">Scroll <span>↓</span></div>
+  </section>
+
+  <!-- ===== Stats Bar ===== -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat"><strong data-count="20">0</strong><span>+ Years of Care</span></div>
+      <div class="stat"><strong data-count="37">0</strong><span>Google Reviews</span></div>
+      <div class="stat"><strong data-count="4">0</strong><span>Programs Offered</span></div>
+      <div class="stat"><strong data-count="100">0</strong><span>% Licensed</span></div>
     </div>
   </section>
 
-  <!-- ===== Marquee ===== -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>Infant Care</span><span>✦</span><span>Child Care</span><span>✦</span><span>VPK Program</span><span>✦</span><span>After-School Care</span><span>✦</span><span>Frog Street Curriculum</span><span>✦</span><span>Transportation Available</span><span>✦</span>
-      <span>Infant Care</span><span>✦</span><span>Child Care</span><span>✦</span><span>VPK Program</span><span>✦</span><span>After-School Care</span><span>✦</span><span>Frog Street Curriculum</span><span>✦</span><span>Transportation Available</span><span>✦</span>
-    </div>
-  </div>
-
   <!-- ===== About ===== -->
   <section class="about section" id="about">
-    <div class="container about-inner">
-      <div class="about-visual">
-        <img src="assets/classroom-fun.png" alt="Classroom fun at Kids-R-Kreative">
-        <div class="about-exp">20+<br>Years of Care</div>
+    <div class="container about-grid">
+      <div class="about-media">
+        <div class="media-frame">
+          <img src="assets/main-content-img.png" alt="Children learning at Kids-R-Kreative">
+        </div>
+        <div class="media-badge">20+<br>Years</div>
       </div>
       <div class="about-copy">
         <span class="tag">About Us</span>
         <h2>Welcome to Kids-R-Kreative Learning Center</h2>
         <p>For over 20 years, we've offered a safe, nurturing environment where children grow socially, emotionally, and academically through infant care, child care, after-school programs, and Voluntary Prekindergarten (VPK) for children ages 6 weeks to 12 years.</p>
         <p>Our experienced teachers use the Frog Street approach to build a strong foundation for every child's next steps in learning.</p>
-        <ul class="about-list">
-          <li>✅ Florida Licensed Provider</li>
-          <li>✅ Frog Street Curriculum</li>
-          <li>✅ Transportation Available</li>
-          <li>✅ Ages 6 weeks – 12 years</li>
-        </ul>
-        <a class="btn btn-blue" href="#tour">Learn More About Us</a>
+        <div class="about-features">
+          <div class="af"><span>✓</span> Florida Licensed Provider</div>
+          <div class="af"><span>✓</span> Frog Street Curriculum</div>
+          <div class="af"><span>✓</span> Transportation Available</div>
+          <div class="af"><span>✓</span> Ages 6 weeks – 12 years</div>
+        </div>
+        <a class="btn btn-accent" href="#tour">Learn More →</a>
       </div>
     </div>
   </section>
@@ -108,37 +111,46 @@
   <!-- ===== Programs ===== -->
   <section class="programs section" id="programs">
     <div class="container">
-      <span class="tag">What We Offer</span>
-      <h2 class="center">Our Programs</h2>
-      <p class="center sub">Age-appropriate care and learning for every stage of your child's growth.</p>
+      <div class="section-head">
+        <span class="tag">What We Offer</span>
+        <h2>Our Programs</h2>
+      </div>
       <div class="program-grid">
-        <article class="p-card p-orange">
-          <div class="p-img"><img src="assets/infant-care.png" alt="Infant care"><span class="p-tag">6 weeks+</span></div>
+        <article class="p-card">
+          <div class="p-num">01</div>
+          <div class="p-img"><img src="assets/infant-care.png" alt="Infant care"></div>
           <div class="p-body">
+            <span class="p-age">6 weeks+</span>
             <h3>Infant Care</h3>
             <p>Nurturing care for infants ages 6 weeks and up.</p>
             <a href="#">Learn More →</a>
           </div>
         </article>
-        <article class="p-card p-green">
-          <div class="p-img"><img src="assets/child-care.png" alt="Child care"><span class="p-tag">Ages 1-4</span></div>
+        <article class="p-card">
+          <div class="p-num">02</div>
+          <div class="p-img"><img src="assets/child-care.png" alt="Child care"></div>
           <div class="p-body">
+            <span class="p-age">Ages 1-4</span>
             <h3>Child Care</h3>
             <p>Engaging learning experiences for growing young minds.</p>
             <a href="#">Learn More →</a>
           </div>
         </article>
-        <article class="p-card p-blue">
-          <div class="p-img"><img src="assets/vpk-program.png" alt="VPK program"><span class="p-tag">Ages 4-5</span></div>
+        <article class="p-card">
+          <div class="p-num">03</div>
+          <div class="p-img"><img src="assets/vpk-program.png" alt="VPK program"></div>
           <div class="p-body">
+            <span class="p-age">Ages 4-5</span>
             <h3>VPK Program</h3>
             <p>School readiness through our Florida VPK program.</p>
             <a href="#">Learn More →</a>
           </div>
         </article>
-        <article class="p-card p-gold">
-          <div class="p-img"><img src="assets/after-school-care.png" alt="After-school care"><span class="p-tag">Ages 5-12</span></div>
+        <article class="p-card">
+          <div class="p-num">04</div>
+          <div class="p-img"><img src="assets/after-school-care.png" alt="After-school care"></div>
           <div class="p-body">
+            <span class="p-age">Ages 5-12</span>
             <h3>After-School Care</h3>
             <p>Enrichment, homework help, and fun after school.</p>
             <a href="#">Learn More →</a>
@@ -148,34 +160,36 @@
     </div>
   </section>
 
-  <!-- ===== Why Us ===== -->
+  <!-- ===== Why Us (Bento Grid) ===== -->
   <section class="why section" id="why">
     <div class="container">
-      <span class="tag">Why Us</span>
-      <h2 class="center">Why Families Choose Us</h2>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon orange">🛡️</div>
+      <div class="section-head">
+        <span class="tag">Why Us</span>
+        <h2>Why Families Choose Us</h2>
+      </div>
+      <div class="bento">
+        <div class="bento-item bento-lg">
+          <div class="bento-icon">🛡️</div>
           <h3>Safe & Secure</h3>
           <p>Environment</p>
         </div>
-        <div class="why-card">
-          <div class="why-icon blue">👩‍🏫</div>
-          <h3>Experienced & Caring</h3>
+        <div class="bento-item">
+          <div class="bento-icon">👩‍🏫</div>
+          <h3>Experienced</h3>
           <p>Educators</p>
         </div>
-        <div class="why-card">
-          <div class="why-icon green">💚</div>
+        <div class="bento-item">
+          <div class="bento-icon">💚</div>
           <h3>Individualized</h3>
           <p>Attention</p>
         </div>
-        <div class="why-card">
-          <div class="why-icon gold">📖</div>
+        <div class="bento-item">
+          <div class="bento-icon">📖</div>
           <h3>Strong</h3>
           <p>Foundation</p>
         </div>
-        <div class="why-card">
-          <div class="why-icon blue">🚌</div>
+        <div class="bento-item bento-lg">
+          <div class="bento-icon">🚌</div>
           <h3>Transportation</h3>
           <p>Available</p>
         </div>
@@ -185,26 +199,31 @@
 
   <!-- ===== Learning Approach ===== -->
   <section class="learning section">
-    <div class="container learning-box">
-      <span class="tag">Our Approach</span>
-      <h2 class="center">Learning for Life</h2>
-      <p class="center sub">Building the skills children need today for a brighter tomorrow.</p>
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">Our Approach</span>
+        <h2>Learning for Life</h2>
+      </div>
       <div class="learning-grid">
         <div class="learn-item">
-          <div class="learn-icon orange">🤝</div>
-          <strong>Social</strong>
+          <span class="learn-num">S</span>
+          <h3>Social</h3>
+          <p>Building friendships and teamwork skills</p>
         </div>
         <div class="learn-item">
-          <div class="learn-icon blue">💖</div>
-          <strong>Emotional</strong>
+          <span class="learn-num">E</span>
+          <h3>Emotional</h3>
+          <p>Developing confidence and empathy</p>
         </div>
         <div class="learn-item">
-          <div class="learn-icon green">🏃</div>
-          <strong>Physical</strong>
+          <span class="learn-num">P</span>
+          <h3>Physical</h3>
+          <p>Growing motor skills and coordination</p>
         </div>
         <div class="learn-item">
-          <div class="learn-icon gold">💡</div>
-          <strong>Cognitive</strong>
+          <span class="learn-num">C</span>
+          <h3>Cognitive</h3>
+          <p>Fostering curiosity and problem-solving</p>
         </div>
       </div>
     </div>
@@ -213,34 +232,36 @@
   <!-- ===== Testimonials ===== -->
   <section class="testimonials section" id="testimonials">
     <div class="container">
-      <span class="tag">Testimonials</span>
-      <h2 class="center">What Parents Are Saying</h2>
+      <div class="section-head">
+        <span class="tag">Testimonials</span>
+        <h2>What Parents Are Saying</h2>
+      </div>
       <div class="rating-banner">
         <div class="rating-big">4.0 <span>★★★★★</span></div>
         <p>Based on 37 Google reviews</p>
         <a class="btn btn-outline" href="#">Leave a Review</a>
       </div>
-      <div class="testimonial-slider" id="slider">
-        <div class="slide active">
+      <div class="t-slider" id="tSlider">
+        <div class="t-slide active">
           <div class="quote">“</div>
           <p>Kids-R-Kreative has been a blessing for our family. The teachers are amazing and my daughter loves going every day!</p>
           <footer>— Jessica R., Parent <b>★★★★★</b></footer>
         </div>
-        <div class="slide">
+        <div class="t-slide">
           <div class="quote">“</div>
           <p>The VPK program prepared my son so well for kindergarten. We are so grateful for the caring and supportive environment.</p>
           <footer>— Michael T., Parent <b>★★★★★</b></footer>
         </div>
-        <div class="slide">
+        <div class="t-slide">
           <div class="quote">“</div>
           <p>The staff truly cares about the kids. Communication is excellent and I feel confident leaving my child here.</p>
           <footer>— Ashley P., Parent <b>★★★★★</b></footer>
         </div>
       </div>
-      <div class="slider-dots" id="dots">
-        <button class="dot active" data-slide="0"></button>
-        <button class="dot" data-slide="1"></button>
-        <button class="dot" data-slide="2"></button>
+      <div class="t-dots" id="tDots">
+        <button class="t-dot active" data-slide="0"></button>
+        <button class="t-dot" data-slide="1"></button>
+        <button class="t-dot" data-slide="2"></button>
       </div>
     </div>
   </section>
@@ -248,9 +269,10 @@
   <!-- ===== Gallery ===== -->
   <section class="gallery section" id="gallery">
     <div class="container">
-      <span class="tag">Gallery</span>
-      <h2 class="center">A Glimpse Inside</h2>
-      <p class="center sub">Take a peek at our vibrant learning spaces and outdoor play areas.</p>
+      <div class="section-head">
+        <span class="tag">Gallery</span>
+        <h2>A Glimpse Inside</h2>
+      </div>
       <div class="gallery-grid">
         <figure class="g-item"><img src="assets/outdoor-play.png" alt="Outdoor play"><figcaption>Outdoor Play</figcaption></figure>
         <figure class="g-item"><img src="assets/classroom-fun.png" alt="Classroom fun"><figcaption>Classroom Fun</figcaption></figure>
@@ -264,8 +286,10 @@
   <!-- ===== FAQ ===== -->
   <section class="faq section" id="faq">
     <div class="container">
-      <span class="tag">FAQ</span>
-      <h2 class="center">Frequently Asked Questions</h2>
+      <div class="section-head">
+        <span class="tag">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
       <div class="faq-list">
         <details class="faq-item">
           <summary>What ages does Kids-R-Kreative serve?</summary>
@@ -294,8 +318,10 @@
   <!-- ===== Contact ===== -->
   <section class="contact section" id="contact">
     <div class="container">
-      <span class="tag">Get In Touch</span>
-      <h2 class="center">Find Us & Contact Us</h2>
+      <div class="section-head">
+        <span class="tag">Get In Touch</span>
+        <h2>Find Us & Contact Us</h2>
+      </div>
       <div class="contact-grid">
         <div class="map-wrap">
           <iframe
@@ -333,7 +359,7 @@
         <h2>Come See Kids-R-Kreative in Person!</h2>
         <p>We'd love to show you around. Schedule a tour today and discover the difference for your child.</p>
       </div>
-      <a class="btn btn-orange" href="#">📅 Schedule My Tour</a>
+      <a class="btn btn-accent" href="#">📅 Schedule My Tour</a>
     </div>
   </section>
 
@@ -372,10 +398,45 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
+    // Preloader
+    window.addEventListener('load', function() {
+      document.getElementById('preloader').classList.add('hidden');
+    });
+
+    // Mobile nav
     document.getElementById('navToggle').addEventListener('click', function() {
       document.getElementById('nav').classList.toggle('open');
     });
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    // Hero Slider
+    const slides = document.querySelectorAll('.slide');
+    const dotsWrap = document.getElementById('dots');
+    let current = 0;
+    slides.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.className = 's-dot' + (i === 0 ? ' active' : '');
+      d.dataset.slide = i;
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+    });
+    const sDots = document.querySelectorAll('.s-dot');
+    function goTo(i) {
+      slides[current].classList.remove('active');
+      sDots[current].classList.remove('active');
+      current = i;
+      slides[current].classList.add('active');
+      sDots[current].classList.add('active');
+    }
+    document.getElementById('next').addEventListener('click', () => goTo((current + 1) % slides.length));
+    document.getElementById('prev').addEventListener('click', () => goTo((current - 1 + slides.length) % slides.length));
+    setInterval(() => goTo((current + 1) % slides.length), 6000);
 
     // Animated counters
     const counters = document.querySelectorAll('[data-count]');
@@ -398,31 +459,29 @@
     counters.forEach(c => counterObserver.observe(c));
 
     // Testimonial slider
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-    let current = 0;
-    function showSlide(i) {
-      slides.forEach(s => s.classList.remove('active'));
-      dots.forEach(d => d.classList.remove('active'));
-      slides[i].classList.add('active');
-      dots[i].classList.add('active');
+    const tSlides = document.querySelectorAll('.t-slide');
+    const tDots = document.querySelectorAll('.t-dot');
+    let tCurrent = 0;
+    function showT(i) {
+      tSlides.forEach(s => s.classList.remove('active'));
+      tDots.forEach(d => d.classList.remove('active'));
+      tSlides[i].classList.add('active');
+      tDots[i].classList.add('active');
     }
-    dots.forEach(d => d.addEventListener('click', () => {
-      current = +d.dataset.slide;
-      showSlide(current);
+    tDots.forEach(d => d.addEventListener('click', () => {
+      tCurrent = +d.dataset.slide;
+      showT(tCurrent);
     }));
     setInterval(() => {
-      current = (current + 1) % slides.length;
-      showSlide(current);
+      tCurrent = (tCurrent + 1) % tSlides.length;
+      showT(tCurrent);
     }, 5000);
 
     // Scroll reveal
     const revealEls = document.querySelectorAll('.section');
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('revealed');
       });
     }, { threshold: 0.1 });
     revealEls.forEach(el => revealObserver.observe(el));
