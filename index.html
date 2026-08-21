@@ -241,17 +241,30 @@
     </section>
 
     <section class="faculty section-space-sm">
-      <div class="container">
-        <span class="section-tag">Our Team</span>
-        <h2>Meet Our Faculty</h2>
-        <div class="faculty-row">
-          <div class="faculty-placeholder"><span></span><p>Faculty Photo<br>Coming Soon</p></div>
-          <div class="faculty-placeholder"><span></span><p>Faculty Photo<br>Coming Soon</p></div>
-          <div class="faculty-placeholder"><span></span><p>Faculty Photo<br>Coming Soon</p></div>
+      <div class="container faculty-wrap">
+        <div class="faculty-main">
+          <span class="section-tag">Our Team</span>
+          <h2>Meet Our Faculty</h2>
+          <div class="faculty-row">
+            <div class="faculty-placeholder"><span></span><p>Faculty Photo<br>Coming Soon</p></div>
+            <div class="faculty-placeholder"><span></span><p>Faculty Photo<br>Coming Soon</p></div>
+            <div class="faculty-placeholder"><span></span><p>Faculty Photo<br>Coming Soon</p></div>
+          </div>
           <a class="btn btn-blue" href="#">Meet Our Faculty</a>
+        </div>
+        <div class="faculty-newsletter">
+          <span class="section-tag">Stay Connected</span>
+          <h2>Join Our Newsletter</h2>
+          <p>Get updates, parenting tips, and special announcements delivered straight to your inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Demo form only.');">
+            <label class="sr-only" for="email2">Email address</label>
+            <input id="email2" type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </section>
+
 
     <section id="parents" class="testimonials section-space-sm">
       <div class="container">
@@ -333,36 +346,44 @@
     </section>
 
     <section id="contact" class="contact-panel section-space-sm">
-      <div class="container contact-grid">
-        <div class="newsletter">
-          <h3>Stay Connected</h3>
-          <p>Join our newsletter for updates, tips, and special announcements.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Demo form only.');">
-            <label class="sr-only" for="email">Email address</label>
-            <input id="email" type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-        <div class="map-card">
-          <h3>Find Us</h3>
-          <div class="map-embed">
-            <iframe
-              src="https://www.google.com/maps?q=4480%20S%20Tiffany%20Dr%2C%20Mangonia%20Park%2C%20FL%2033407&output=embed"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Map showing Kids-R-Kreative location in Mangonia Park, Florida"></iframe>
+      <div class="container">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Find Us & Contact Us</h2>
+        <p class="section-sub">Visit our center or reach out — we'd love to hear from you.</p>
+        <div class="contact-grid">
+          <div class="map-card">
+            <h3>Find Us</h3>
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps?q=4480%20S%20Tiffany%20Dr%2C%20Mangonia%20Park%2C%20FL%2033407&output=embed"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Map showing Kids-R-Kreative location in Mangonia Park, Florida"></iframe>
+            </div>
           </div>
-        </div>
-        <div class="contact-details">
-          <h3>Contact Us</h3>
-          <p><img src="assets/pin.svg" alt="">4480 S Tiffany Dr, Mangonia Park, FL 33407</p>
-          <p><img src="assets/phone.svg" alt="">Phone: 561-296-2462</p>
-          <p><img src="assets/mail.svg" alt="">kidsrkreativefd@gmail.com</p>
-          <p><img src="assets/mail.svg" alt="">kidsrkidslearningcenter@yahoo.com</p>
-          <p><img src="assets/clock.svg" alt="">Monday–Friday 7:00 AM–5:30 PM</p>
+          <div class="contact-details">
+            <h3>Contact Us</h3>
+            <div class="contact-item">
+              <span class="contact-icon"><img src="assets/pin.svg" alt=""></span>
+              <div><strong>Address</strong><p>4480 S Tiffany Dr,<br>Mangonia Park, FL 33407</p></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><img src="assets/phone.svg" alt=""></span>
+              <div><strong>Phone</strong><p><a href="tel:+15612962462">561-296-2462</a></p></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><img src="assets/mail.svg" alt=""></span>
+              <div><strong>Email</strong><p><a href="mailto:kidsrkreativefd@gmail.com">kidsrkreativefd@gmail.com</a><br><a href="mailto:kidsrkidslearningcenter@yahoo.com">kidsrkidslearningcenter@yahoo.com</a></p></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><img src="assets/clock.svg" alt=""></span>
+              <div><strong>Hours</strong><p>Monday–Friday<br>7:00 AM – 5:30 PM</p></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
 
     <section id="tour" class="tour-cta">
       <div class="container tour-inner">

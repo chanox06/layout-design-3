@@ -150,11 +150,25 @@ a{text-decoration:none;color:inherit}
 .learn-icon{width:68px;height:68px;margin:0 auto 12px;box-shadow:0 6px 14px rgba(0,0,0,.12);transition:transform .3s}
 .learning-grid>div:hover .learn-icon{transform:scale(1.12) rotate(6deg)}
 
-/* ===== Faculty ===== */
-.faculty-row{display:flex;align-items:center;justify-content:center;gap:58px;flex-wrap:wrap}
+/* ===== Faculty + Stay Connected ===== */
+.faculty-wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:stretch}
+.faculty-main{background:#fff;border:1px solid #e9edf5;border-radius:20px;padding:36px;box-shadow:0 8px 28px rgba(20,52,93,.08);text-align:center}
+.faculty-main .section-tag,.faculty-newsletter .section-tag{text-align:center}
+.faculty-main h2,.faculty-newsletter h2{font-family:'Baloo 2',cursive;font-size:30px;color:#14499e;margin:0 0 24px;text-align:center}
+.faculty-row{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;margin-bottom:26px}
 .faculty-placeholder{text-align:center;color:#697386;font-size:13px;transition:transform .25s}
 .faculty-placeholder:hover{transform:translateY(-6px)}
 .faculty-placeholder span{width:80px;height:80px;border-radius:50%;display:block;margin:0 auto 8px;background:radial-gradient(circle at 50% 32%,#bbb 0 18%,transparent 19%),radial-gradient(circle at 50% 84%,#b9b9b9 0 35%,#e6e6e6 36%);box-shadow:0 6px 14px rgba(0,0,0,.1)}
+.faculty-newsletter{background:linear-gradient(135deg,#0a5cc4,#09499e);border-radius:20px;padding:36px;color:#fff;display:flex;flex-direction:column;justify-content:center;box-shadow:0 8px 28px rgba(7,74,165,.2)}
+.faculty-newsletter h2{color:#ffd12d}
+.faculty-newsletter p{color:#eaf3ff;font-size:14px;line-height:1.6;margin:0 0 20px;text-align:center}
+.faculty-newsletter .newsletter-form{display:flex;margin-top:0}
+.faculty-newsletter .newsletter-form input{flex:1;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.15);color:#fff;padding:13px 14px;border-radius:8px 0 0 8px;min-width:0;font-family:inherit}
+.faculty-newsletter .newsletter-form input::placeholder{color:rgba(255,255,255,.7)}
+.faculty-newsletter .newsletter-form input:focus{outline:2px solid #ffd12d;border-color:transparent}
+.faculty-newsletter .newsletter-form button{border:0;background:#ff7a2f;color:#fff;font-weight:800;padding:0 18px;border-radius:0 8px 8px 0;cursor:pointer;transition:opacity .2s}
+.faculty-newsletter .newsletter-form button:hover{opacity:.9}
+
 
 /* ===== Testimonials ===== */
 .rating-summary{display:flex;align-items:center;justify-content:center;gap:24px;margin-bottom:28px;flex-wrap:wrap}
@@ -198,18 +212,21 @@ a{text-decoration:none;color:inherit}
 
 /* ===== Contact ===== */
 .contact-panel{padding-top:62px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:32px;border:1px solid #e8e8e8;border-radius:18px;padding:34px;box-shadow:0 8px 28px rgba(32,54,92,.08);background:#fff}
-.contact-grid h3{color:#f6530a;font-size:21px;margin:0 0 12px;font-family:'Baloo 2',cursive}
-.contact-grid p{font-size:13px;line-height:1.55;color:#48556a}
-.newsletter-form{display:flex;margin-top:22px}
-.newsletter-form input{flex:1;border:1px solid #d8dce4;padding:13px 14px;border-radius:8px 0 0 8px;min-width:0;font-family:inherit}
-.newsletter-form input:focus{outline:2px solid #f6530a;border-color:transparent}
-.newsletter-form button{border:0;background:linear-gradient(135deg,#1a63c9,#174ba2);color:#fff;font-weight:800;padding:0 18px;border-radius:0 8px 8px 0;cursor:pointer;transition:opacity .2s}
-.newsletter-form button:hover{opacity:.9}
-.map-card .map-embed{width:100%;height:170px;border-radius:12px;overflow:hidden;border:1px solid #e1e6ed;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.contact-panel h2{font-family:'Baloo 2',cursive;font-size:36px;text-align:center;color:#14499e;margin:0 0 10px}
+.contact-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;border:1px solid #e8e8e8;border-radius:18px;padding:34px;box-shadow:0 8px 28px rgba(32,54,92,.08);background:#fff}
+.contact-grid h3{color:#f6530a;font-size:21px;margin:0 0 16px;font-family:'Baloo 2',cursive}
+.map-card .map-embed{width:100%;height:100%;min-height:360px;border-radius:12px;overflow:hidden;border:1px solid #e1e6ed;box-shadow:0 4px 12px rgba(0,0,0,.08)}
 .map-card .map-embed iframe{display:block;width:100%;height:100%;border:0}
-.contact-details p{display:flex;align-items:flex-start;gap:10px;margin:9px 0}
-.contact-details p img{width:18px;height:18px;color:#174ba2;flex:0 0 auto;margin-top:2px}
+.contact-details{display:flex;flex-direction:column;gap:18px}
+.contact-item{display:flex;align-items:flex-start;gap:14px;background:#f8fafd;border:1px solid #e9edf5;border-radius:12px;padding:16px}
+.contact-item:hover{box-shadow:0 6px 16px rgba(20,52,93,.08)}
+.contact-icon{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1a63c9,#074aa5);display:grid;place-items:center;flex:0 0 auto}
+.contact-icon img{width:20px;height:20px;filter:brightness(0) invert(1)}
+.contact-item strong{display:block;color:#174ba2;font-size:14px;margin-bottom:3px}
+.contact-item p{margin:0;font-size:14px;line-height:1.5;color:#48556a}
+.contact-item a{color:#f6530a;font-weight:700}
+.contact-item a:hover{text-decoration:underline}
+
 
 /* ===== Tour CTA ===== */
 .tour-cta{background:linear-gradient(135deg,#0a5cc4,#09499e);color:#fff;padding:32px 0;margin-top:40px;position:relative;overflow:hidden}
@@ -256,7 +273,9 @@ a{text-decoration:none;color:inherit}
   .benefit{border:0}
   .testimonial-grid{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:repeat(3,1fr)}
+  .faculty-wrap{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
+  .map-card .map-embed{min-height:280px}
   .footer-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:620px){
@@ -267,7 +286,9 @@ a{text-decoration:none;color:inherit}
   .hero-tagline{font-size:15px}
   .about-copy h2{font-size:28px}
   .about-badge{font-size:13px;padding:12px 16px}
+  .faculty-main,.faculty-newsletter{padding:26px 20px}
   .trust-grid,.program-grid,.learning-grid,.footer-grid{grid-template-columns:1fr}
+
   .trust-item{border-right:0;border-bottom:1px solid #eee}
   .learning-grid>div{border-right:0;border-bottom:1px solid #d4deec;padding:18px}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
